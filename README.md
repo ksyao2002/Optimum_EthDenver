@@ -30,6 +30,12 @@ Start the server
   yarn start
 ```
 
+## Run on Docker
+
+```docker build -t optimum .
+  docker run -p 3001:3000 optimum
+```
+
 ## Tech Stack
 
 - [React](https://reactjs.org/)

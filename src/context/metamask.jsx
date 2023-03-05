@@ -63,7 +63,9 @@ export function MetamaskStore(props) {
 	}
 
 	const submitStake = async () => {
-		const _provider = new ethers.providers.Web3Provider(window.ethereum)
+		const _provider = ethers.getDefaultProvider(
+			"http://127.0.0.1:3000"
+		  )//new ethers.providers.Web3Provider(window.ethereum)
 
 		const erc = new ethers.Contract(
 			"0x139e9DF9976E17D1D8AFf50B84793ac35e52662C",
